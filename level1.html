@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Challenge 1: Go Fishing for Phish</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body data-page="level1">
+<main>
+    <header>
+        <div class="progress-badge">Trail Checkpoint 1 of 3</div>
+        <h1>Camp Challenge 1: Go Fishing for Phish</h1>
+        <p>At Cyber Camp, phish are the ones you avoid. Read each message, spot the fishy bait, and mark the ones that are trying to trick you.</p>
+    </header>
+
+    <section class="card">
+        <p class="small-note">The mountain trail is full of hidden traps. Identify the bad messages before they send you off the path.</p>
+        <form id="level1-form">
+            <div class="email-list">
+                <article class="email-card">
+                    <h3>Urgent: Your Account is Suspended</h3>
+                    <p>Dear user, your account has been suspended due to suspicious activity. Click here to verify your identity: http://fakebank.com/verify</p>
+                    <label><input type="checkbox" name="phishing_1"> Mark as Phishing</label>
+                </article>
+
+                <article class="email-card">
+                    <h3>Hey Eloise! Welcome to Our Newsletter</h3>
+                    <p>Thank you for subscribing to Costco's newsletter. Please confirm your email by clicking this link: http://costco.com/confirm</p>
+                    <label><input type="checkbox" name="phishing_2"> Mark as Phishing</label>
+                </article>
+
+                <article class="email-card">
+                    <h3>You've Won a Prize!</h3>
+                    <p>Congratulations! You've won $1000. Claim it now at http://prizeclaim.com</p>
+                    <label><input type="checkbox" name="phishing_3"> Mark as Phishing</label>
+                </article>
+
+                <article class="email-card">
+                    <h3>Meeting Reminder</h3>
+                    <p>Don't forget our meeting tomorrow at 10 AM. Agenda attached.</p>
+                    <label><input type="checkbox" name="phishing_4"> Mark as Phishing</label>
+                </article>
+            </div>
+
+            <div class="action-row">
+                <button type="submit">Check Answers</button>
+                <a class="trail-link" href="index.html">Back to Camp Entrance</a>
+            </div>
+        </form>
+
+        <p id="level1-feedback" class="status-message" aria-live="polite"></p>
+    </section>
+</main>
+<script src="static/app.js"></script>
+</body>
+</html>
